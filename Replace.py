@@ -1,21 +1,13 @@
-n=int(input(""))
-d=0
-digit=0
-while(n>0):
-	n=n//10
-	digit=digit+1
-max=1
-while(digit>1):
-	max=max*10
-	digit-=1
-di=10
-out=0
-while(di<=max):
-	d=n%di
-	print(d)
-	if d==0:
-		d=5
-	out=out+d*di
-	di=di*10
-	print(di)
-print(out)
+n=int(input("Enter the number:"))
+a=int(input("To be replaced:"))
+b=int(input("To be replaced by:"))
+c=0
+i=0
+while n>0:
+    i+=1
+    d=n%10
+    n=n//10
+    if d==a:
+        d=b
+    c=c+d*(10**(i-1))
+print(c)
