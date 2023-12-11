@@ -1,0 +1,18 @@
+#f1{
+    background-color:gray;
+    height:45px;
+    padding-top:10px;
+    width:1500px;
+}
+
+#f2{
+    background-color:black;
+    anchor:left;
+    width:150px;
+    height:800px;
+}
+
+#txt{
+    color:white;
+    font-size: 20px;
+}
