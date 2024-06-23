@@ -29,7 +29,7 @@ def insert():
         df.to_sql(table, engine, if_exists="append", index=False)
 
     except ValueError:
-        print("You did not enter a valid data.\n")
+        print("You did not enter valid data.\n")
 
 
 def update():
@@ -52,7 +52,5 @@ try:
     else:
         print("You entered the wrong password!")
 
-except ValueError:
-    print("Username is incorrect!")
-except IndexError:
+except ValueError or IndexError:
     print("Username is incorrect!")

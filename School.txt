@@ -1,0 +1,21 @@
+create database School;
+
+use School;
+
+create table students(
+    -> id int(4) primary key,
+    -> class varchar(5) not null,
+    -> section varchar(1) not null,
+    -> rollno int(2) not null,
+    -> sname varchar(30) not null,
+    -> fname varchar(30),
+    -> mname varchar(30),
+    -> dob date,
+    -> mob bigint(11) not null,
+    -> convId int(3) not null);
+
+create table conveyance(
+    -> convId int(3) primary key,
+    -> type varchar(10) not null,
+    -> teacherIC int(4) unique,
+    -> route varchar(40) not null);
