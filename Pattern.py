@@ -1,0 +1,9 @@
+i=int(input("Enter the number:"))
+a=0
+b=0
+while(a<=i):
+    b=i
+    while(b<=i):
+        print("*", end=" ")
+        b-=1
+    a+=1
